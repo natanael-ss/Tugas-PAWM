@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="logo">BahasaLoka</h1>
+        <div class="form-container">
+            <h2>Sign up</h2>
+            <form id=signupForm action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Nama Lengkap:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <label for="show_password">
+                    <input id="show_password" type="checkbox">
+                    Tampilkan password
+                </label>
+                <script>
+                    const inputPassword = document.getElementById("password");
+                    const showPassword = document.getElementById("show_password");
+                    
+                    showPassword.addEventListener("input", (e) =>{
+                        if(e.target.checked) {
+                            inputPassword.setAttribute("type", "text");
+                        } else {
+                            inputPassword.setAttribute("type", "password");
+                        }
+                    })
+
+                    const signupForm = document.getElementById("signupForm");
+                    signupForm.addEventListener("submit", function(event) {
+                        event.preventDefault(); // Mencegah form dikirim ke server
+
+                        // Kamu bisa tambahkan validasi tambahan di sini jika diperlukan
+
+                        // Redirect ke halaman index.html
+                        window.location.href = "index.html";
+                    })
+
+                </script>
+                <button type="submit" class="btn">Sign up</button>
+            </form>
+            <p>Sudah punya akun? <a href="login.html">Login di sini</a></p>
+        </div>
+    </div>
+</body>
+</html>
