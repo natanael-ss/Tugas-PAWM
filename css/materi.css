@@ -8,8 +8,8 @@
 
 .materi-box {
     background-color: #ffffff;
-    padding: 1.5rem;
-    border-radius: 8px;
+    padding: 1rem;
+    border-radius: 25px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-bottom: 1.5rem;
 }
@@ -102,12 +102,12 @@
 }
 
 .button-container {
-    margin-top: 20px;
     text-align: center;
 }
 
 .btn-latihan {
     display: inline-block;
+    margin-bottom: 0.5rem;
     padding: 10px 20px;
     background-color: #6a6a6a;
     color: white;

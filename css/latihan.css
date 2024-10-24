@@ -137,6 +137,7 @@
     cursor: pointer;
     border-radius: 8px;
     transition: background-color 0.3s ease;
+    font-family: "Poppins";
 }
 
 #back-to-material:hover {
@@ -152,6 +153,7 @@
 .result-message {
     color: blue;
     font-size: 20px;
+    font-family: "Poppins";
     font-weight: bold;
     text-align: center;
     padding: 20px;
