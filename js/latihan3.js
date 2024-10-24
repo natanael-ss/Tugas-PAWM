@@ -16,7 +16,7 @@ function checkAnswer() {
         notification.innerHTML = `<span style="color: red;">Soal ${currentQuestion} belum diisi. Silakan pilih jawaban.</span>`;
     } else {
         if (userAnswer === correctAnswer) {
-            notification.innerHTML = `<span class="notification-success">Jawaban benar! Lanjut ke soal berikutnya...</span>`;
+            notification.innerHTML = `<span class="notification-success">Jawaban benar!</span>`;
 
             // Sembunyikan tombol submit dan lanjutkan ke soal berikutnya setelah delay
             setTimeout(() => {
